@@ -9,16 +9,16 @@ int main()
 	
 	vector<vector<char>> pole(rows, vector<char>(columns, '-'));
 
-	cout << "Ââåäèòå 10 êëåòîê ñ æèçíüþ:" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 10 ÐºÐ»ÐµÑ‚Ð¾Ðº Ñ Ð¶Ð¸Ð·Ð½ÑŒÑŽ:" << endl;
 	for (int k = 0; k < 10; k++) {
 		int row, col;
-		cout << "Êëåòêà " << k + 1 << ": ";
+		cout << "ÐšÐ»ÐµÑ‚ÐºÐ° " << k + 1 << ": ";
 		cin >> row >> col;
 		if (row >= 0 && row < rows && col >= 0 && col < columns) {
 			pole[row][col] = '*';
 		}
 		else {
-			cout << "Îøèáêà! Êîîðäèíàòû âíå ïîëÿ. Ïîïðîáóéòå ñíîâà." << endl;
+			cout << "ÐžÑˆÐ¸Ð±ÐºÐ°! ÐšÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ Ð²Ð½Ðµ Ð¿Ð¾Ð»Ñ. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÑÐ½Ð¾Ð²Ð°." << endl;
 			k--;
 		}
 	}
